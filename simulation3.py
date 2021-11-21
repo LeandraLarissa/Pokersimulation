@@ -1,5 +1,5 @@
 #3 players, strategies with random componend, blinds change every 6th(every 5th in sim2)
-#players have to pay blinds mor often
+#players have to pay blinds more often
 from random import randint
 print()
 print("*********")
