@@ -1,5 +1,6 @@
 #3 players, strategies with random componend, blinds change every 6th(every 5th in sim2)
 #players have to pay blinds more often
+#with these settings the achieved rounds during a 1000 trials from player 1 and player 2 are printed
 from random import randint
 print()
 print("*********")
