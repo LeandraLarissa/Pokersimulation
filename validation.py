@@ -1,3 +1,10 @@
+#makes a random hand and calculates a value between 0 to 11
+#0 is having no card combination and 10 is having a royal flush
+#to the values from 0 to 10 the rank of the highest card diveded by hundered is added
+#what appears in the console:
+#the hand is printed
+#the rank (0 to 12) is printed with the color/ suit (0 to 3)
+#then the value is printed
 from random import randint
 print()
 print("*********")
@@ -22,7 +29,7 @@ handfarbe = []
 for i in range (0,5):
     handname.append(hand[i]%13)
     handfarbe.append(hand[i]//13)
-print(hand)
+print("the hand is:",hand)
 handname.sort()
 
 #Erkennen der Kombination
@@ -80,5 +87,7 @@ def validation(name, color):
         value += highestcard     
                 
     return value
-print(handname, handfarbe)
-print(validation(handname,handfarbe))   
+print("rank, suit")
+for i in range (5):    
+    print(handname[i], handfarbe[i])
+print("the value of the hand is:",validation(handname,handfarbe))   
