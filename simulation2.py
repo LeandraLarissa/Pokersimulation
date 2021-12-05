@@ -1,4 +1,5 @@
 #blinds change, strategies stay, 5 players
+#with these settings the occurence of specific achieved rounds during a 1000 trials from player 1 and player 2 are counted and printed
 from random import randint
 print()
 print("*********")
